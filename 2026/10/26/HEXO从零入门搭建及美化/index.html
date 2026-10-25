@@ -1,0 +1,109 @@
+<!DOCTYPE html><html lang="zh-CN" theme-mode="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>HEXO从零入门搭建及美化 | 罗德岛资料库</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="preload" as="font" crossorigin="anonymous" href="/font/Bender.ttf"><link rel="preload" as="font" crossorigin="anonymous" href="/font/BenderLight.woff2"><link rel="preload" as="font" crossorigin="anonymous" href="/font/JetBrainsMono-Regular.woff2"><link rel="stylesheet" href="/css/arknights.css"><style>@font-face {
+  font-family: Bender;
+  src: local('Bender'), url("/font/Bender.ttf"), url("/font/Bender.otf");
+}
+@font-face {
+  font-family: BenderLight;
+  src: local('BenderLight'), url("/font/BenderLight.ttf");
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}
+</style><meta name="page-config" content="{&quot;code_fold&quot;:null}"><script class="pjax-js">var config = {"root":"/","code_fold":15,"search":{"preload":true,"activeHolder":"键入以继续","blurHolder":"数据检索","noResult":"无 $0 相关数据"},"code":{"codeInfo":"$0 - $1 行","copy":"复制"}};
+var page_config = {
+  code_fold: null
+};
+function updatePageConfig() {
+  var newPageConfig = document.querySelector('meta[name="page-config"]');
+  if (newPageConfig) {
+    page_config = JSON.parse(newPageConfig.content);
+  }
+}
+document.addEventListener('pjax:complete', function() { updatePageConfig(); });
+updatePageConfig();</script><link type="text/css" rel="stylesheet" href="/lib/encrypt/hbe.style.css"><script src="//unpkg.com/mermaid@10.5.0/dist/mermaid.min.js"></script><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lightgallery.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-zoom.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-thumbnail.css"><link type="text/css" rel="stylesheet" href="/lib/fontawesome/css/all.min.css"><script>if (window.localStorage.getItem('theme-mode') === 'light')
+ document.documentElement.setAttribute('theme-mode', 'light')
+if (window.localStorage.getItem('theme-mode') === 'dark')
+ document.documentElement.setAttribute('theme-mode', 'dark')</script><style>@font-face {
+ font-family: BenderLight;
+ src: local('Bender'), url("/font/BenderLight.woff2") format('woff2');
+}
+@font-face {
+ font-family: 'JetBrains Mono';
+ src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}</style><style>:root {
+ --dark-background: url('/img/d.jpg');
+ --light-background: url('/img/y.jpg');
+ --theme-encrypt-confirm: '确认'
+}</style><script defer src="/js/arknights.js"></script><script defer src="/js/search.js"></script><script defer src="https://vercount.one/js"></script><script defer type="module">import mermaid from '//unpkg.com/mermaid@10.5.0/dist/mermaid.esm.mjs';
+window.mermaid = mermaid;
+code.paintMermaid();
+</script><script async src="//unpkg.com/lightgallery@2.7.1/lightgallery.min.js"></script><script async src="//unpkg.com/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script><script async src="//unpkg.com/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script><script async src="/lib/encrypt/hbe.js"></script><script async src="/js/pjax.js"></script><script class="pjax-js">reset= () => {document.querySelector('.lg-container')?.remove()
+lightGallery(document.getElementById('post-bg'), {
+  plugins: [lgZoom,lgThumbnail],
+  selector: '.item-img'})}</script><script>window.addEventListener("load",() => {pjax = new Pjax({
+ cacheBust: false,
+ selectors: ['title','article','#aside-block','.pjax-js','data-pjax','.vercount','meta[name=page-config]'],
+ switches: {'article': Pjax.switches.sideBySide},
+ switchesOptions: {
+   'article': {
+     classNames: {
+       remove: "pjax-out",
+       add: "pjax-in"
+     }
+   }
+ }
+});
+document.addEventListener("pjax:complete", reset);document.addEventListener('pjax:success', _ => {
+ const script = document.createElement('script');
+ script.src = 'https://vercount.one/js';
+ document.head.appendChild(script);
+});reset()})</script><script class="pjax-js">reset= () => {document.querySelector('.lg-container')?.remove()
+const postBg = document.querySelector('#post-bg');
+if (postBg) lightGallery(postBg, {
+  plugins: [lgZoom,lgThumbnail],
+  selector: '.item-img'})}</script><script>window.addEventListener("load",() => {pjax = new Pjax({
+ cacheBust: false,
+ selectors: ['title','article','#aside-block','.pjax-js','data-pjax','.vercount','meta[name=page-config]'],
+ switches: {'article': Pjax.switches.sideBySide},
+ switchesOptions: {
+   'article': {
+     classNames: {
+       remove: "pjax-out",
+       add: "pjax-in"
+     }
+   }
+ }
+});
+document.addEventListener("pjax:complete", reset);document.addEventListener('pjax:success', _ => {
+ const script = document.createElement('script');
+ script.src = 'https://vercount.one/js';
+ document.head.appendChild(script);
+});reset()})</script><meta name="generator" content="Hexo 8.1.2"></head><body><div class="loading" style="opacity: 0;"><div class="loadingBar left"></div><div class="loadingBar right"></div></div><main><header class="closed"><div class="navBtn"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><nav><div class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="数据检索" spellcheck="false" maxlength="50" type="text" id="search-input"></span></div><div class="navItem" id="search-holder"></div><div class="search-popup" tabindex="0"><div id="search-result"></div></div><ol class="navContent"><li class="navItem"><a class="navBlock" href="/"><span class="navItemTitle">Home</span></a></li><li class="navItem"><a class="navBlock" href="/%E6%A1%A3%E6%A1%88/"><span class="navItemTitle">Archives</span></a></li></ol></nav></header><article><div id="post-bg"><div id="post-title"><h1>HEXO从零入门搭建及美化</h1><div id="post-info"><span>文章发布时间: <div class="control"><time datetime="2026-10-25T19:02:59.000Z" id="date"> 2026-10-26</time></div></span><br><span>最后更新时间: <div class="control"><time datetime="2026-10-25T21:56:05.404Z" id="updated"> 2026-10-26</time></div></span><br><span id="vercount_container_page_pv">页面浏览: <span class="control" id="vercount_value_page_pv">加载中...</span></span></div></div><hr><div id="post-content"><h1 id="基于GitHub个人仓库搭建的HEXO"><a href="#基于GitHub个人仓库搭建的HEXO" class="headerlink" title="基于GitHub个人仓库搭建的HEXO"></a>基于GitHub个人仓库搭建的HEXO</h1><h2 id="开始前准备"><a href="#开始前准备" class="headerlink" title="开始前准备"></a>开始前准备</h2><p>1.一个可使用的邮箱<br>2.<a target="_blank" rel="noopener" href="https://github.com/">GitHub</a>个人账号<br>3.合适的“魔法”工具以便登入GitHub<br>4.<a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/download">nodejs</a><br>5.<a target="_blank" rel="noopener" href="https://git-scm.com/install/">git</a></p>
+<h2 id="测试nodejs（及附件）和Git是否下载成功"><a href="#测试nodejs（及附件）和Git是否下载成功" class="headerlink" title="测试nodejs（及附件）和Git是否下载成功"></a>测试nodejs（及附件）和Git是否下载成功</h2><blockquote>
+<p>以管理员cmd输入以下代码验证<br>（可通过右键win图标选择弹出）  </p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">1|node -v<br>2|npm -v (这个就是nobejs的附件)<br>3|git -v<br></code></pre></td></tr></table></figure>
+<p>输出结果如图为版本号即为安装完成<br class='item-img' data-src='/HEXO%E4%BB%8E%E9%9B%B6%E5%85%A5%E9%97%A8%E6%90%AD%E5%BB%BA%E5%8F%8A%E7%BE%8E%E5%8C%96/1.png'><img src="/HEXO%E4%BB%8E%E9%9B%B6%E5%85%A5%E9%97%A8%E6%90%AD%E5%BB%BA%E5%8F%8A%E7%BE%8E%E5%8C%96/1.png"><br><strong>继续使用管理员cmd运行以下指令下载hexo</strong><br><code>npm install hexo-cli -g</code></p>
+<h2 id="搭建GitHub仓库"><a href="#搭建GitHub仓库" class="headerlink" title="搭建GitHub仓库"></a>搭建GitHub仓库</h2><p>1.登入GitHub账号（准备工作时创建的那个）<br>2.搭建个人仓库<br class='item-img' data-src='/HEXO%E4%BB%8E%E9%9B%B6%E5%85%A5%E9%97%A8%E6%90%AD%E5%BB%BA%E5%8F%8A%E7%BE%8E%E5%8C%96/2.png'><img src="/HEXO%E4%BB%8E%E9%9B%B6%E5%85%A5%E9%97%A8%E6%90%AD%E5%BB%BA%E5%8F%8A%E7%BE%8E%E5%8C%96/2.png"><br>登入新版GitHub个人主页后点击右上角小加号，在弹出的选项中选择 <strong>New repository</strong><br>3.点击完后就会跳转到这个页面<br class='item-img' data-src='/HEXO%E4%BB%8E%E9%9B%B6%E5%85%A5%E9%97%A8%E6%90%AD%E5%BB%BA%E5%8F%8A%E7%BE%8E%E5%8C%96/3.png'><img src="/HEXO%E4%BB%8E%E9%9B%B6%E5%85%A5%E9%97%A8%E6%90%AD%E5%BB%BA%E5%8F%8A%E7%BE%8E%E5%8C%96/3.png"><br>注意<strong>Repository name</strong>（仓库名）必须按格式填写</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">用户名(你自己注册的GitHub用户名).github.io<br></code></pre></td></tr></table></figure>
+<p>然后勾选Add选项，再点击Create repository创建</p>
+<h2 id="生成SSH-Keys"><a href="#生成SSH-Keys" class="headerlink" title="生成SSH Keys"></a>生成SSH Keys</h2><p>1.到桌面空白处右键打开<strong>Open Git Bash here</strong> （win11系统要点击显示更多选项才能看到）  </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">ssh-keygen -t rsa -C &quot;邮件地址&quot;<br></code></pre></td></tr></table></figure>
+<p>2.输入指令后回车，等待出现提示信息后再次回车，重复三次后再次出现指令填写框就可以关闭页面了<br>3.然后进入C:\Users\用户名\ .ssh文件夹（注意这里“用户名指的是win系统以你的用户名创建的文件夹”），用记事本打开里面的id_rsa.pub,全选复制里面的代码  </p>
+<h2 id="配置GitHub-SSH"><a href="#配置GitHub-SSH" class="headerlink" title="配置GitHub SSH"></a>配置GitHub SSH</h2><p>1.再次打开GitHub，点击右上角头像，在弹出的选项中选择<strong>Settings</strong>（齿轮⚙️图标）<br>2.点击<strong>SSH</strong>在页面点击<strong>New SSH key</strong>新建SSH<br>3.Title（标题）这里随便，在下面的<strong>Key</strong>格子中粘贴刚才复制的内容然后点击绿色的按钮创建<br>4.回到桌面打开<strong>Open Git Bash here</strong>输入代码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">ssh -T git@github.com<br></code></pre></td></tr></table></figure>
+<p>运行后等待弹出提示后填入<strong>yes</strong>回车，出现指令填写框就可以关掉页面了</p>
+<h2 id="本地生成博客内容"><a href="#本地生成博客内容" class="headerlink" title="本地生成博客内容"></a>本地生成博客内容</h2><p>1.找到一个合适的位置新建文件夹（最好是能方便你找到的位置，不能是桌面），文件夹名最好是英文<br>2.在新建的文件夹中打开<strong>Open Git Bash here</strong>输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">hexo init<br></code></pre></td></tr></table></figure>
+<p><strong>如果‘command not find’，就在前面加上npx，如：npx hexo init，并且后续使用的hexo代码前面都加上</strong><br>3.依次输入以下指令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">hexo install<br>hexo g<br>hexo s<br></code></pre></td></tr></table></figure>
+<p>（不成功的话就把“魔法”挂上）<br>完成后按键盘ctrl+c  </p>
+<h2 id="上传HEXO"><a href="#上传HEXO" class="headerlink" title="上传HEXO"></a>上传HEXO</h2><p>1.进入之前新建的文件夹，打开_config.yml<br>拉到最下面将deploy后面的全删掉<br>2.复制粘贴这段代码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">type: git<br>repository:<br>branch: main<br></code></pre></td></tr></table></figure>
+<p>3.去GitHub，依旧点右上角自己头像，打开设置，在设置页面点击自己的用户名，这样就能看到自己的库项目然后复制自己的项目链接<br class='item-img' data-src='/HEXO%E4%BB%8E%E9%9B%B6%E5%85%A5%E9%97%A8%E6%90%AD%E5%BB%BA%E5%8F%8A%E7%BE%8E%E5%8C%96/4.png'><img src="/HEXO%E4%BB%8E%E9%9B%B6%E5%85%A5%E9%97%A8%E6%90%AD%E5%BB%BA%E5%8F%8A%E7%BE%8E%E5%8C%96/4.png"><br>4.将链接粘贴到<strong>repository</strong>后面<br><strong>这里要注意格式上面三行代码前面是两个空格，冒号后面一个空格</strong><br>5.回到你创建件夹打开<strong>Open Git Bash here</strong>依次输入  </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">npm install hexo-deployer-git --save<br>hexo g（生成）<br>git config --global user.email &quot;你的邮箱&quot;<br>git config --global user.name &quot;你的GitHub用户名&quot;<br>hexo d（上传）<br></code></pre></td></tr></table></figure>
+<p>6.在弹出的窗口中登录你的GitHub账号</p>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>到这里你就已经可以用你一开始注册的仓库名当链接进入你的HEXO啦<br><a target="_blank" rel="noopener" href="https://blog.gochi.cn/posts/hexo-build/#%E5%A6%82%E4%BD%95%E4%B8%8A%E4%BC%A0%E6%96%87%E7%AB%A0">参考文献</a></p>
+<div id="paginator"></div></div><div id="post-footer"></div></div><div class="bottom-btn"><div><a class="i-top" id="to-top" onClick="scrolls.scrolltop();" title="回到顶部" style="opacity: 0; display: none;">∧ </a><a class="i-index" id="to-index" href="#toc-div" title="文章目录">≡</a><a class="i-color" id="color-mode" onClick="colorMode.change()" title="切换主题"></a><a onclick="BgmControl()"><svg id="bgm-control" viewBox="0 0 30 34" fill="#18d1ff" style="width: 24px; transition: transform .3s;margin-top: 4px"><path d="M25.998 23.422V11.29h3.999v12.132h-3.999zM19.497 6.234h4.001v22.243h-4.001V6.234zM12.998.867h4v32.978h-4V.867zm-6.5 5.367h4.001v22.243H6.498V6.234zm-6.5 5.056h4v12.132h-4V11.29z"></path></svg><audio id="bgm" src="/audio/bgm.mp3" autoplay loop crossorigin="anonymous"> </audio></a></div></div></article><aside><div id="about"><a href="/" id="logo"><img src="/img/tx.jpg" alt="Logo" style="margin:0;border-radius:0;"></a><h1 id="Dr"><a href="/">huaxuanya</a></h1><div id="description"><p>终端仍在测试 更多功能敬请期待 V0.7.5</p></div></div><div id="aside-block"><div id="toc-div"><h1>目录</h1><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9F%BA%E4%BA%8EGitHub%E4%B8%AA%E4%BA%BA%E4%BB%93%E5%BA%93%E6%90%AD%E5%BB%BA%E7%9A%84HEXO"><span class="toc-number">1.</span> <span class="toc-text">基于GitHub个人仓库搭建的HEXO</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E5%A7%8B%E5%89%8D%E5%87%86%E5%A4%87"><span class="toc-number">1.1.</span> <span class="toc-text">开始前准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95nodejs%EF%BC%88%E5%8F%8A%E9%99%84%E4%BB%B6%EF%BC%89%E5%92%8CGit%E6%98%AF%E5%90%A6%E4%B8%8B%E8%BD%BD%E6%88%90%E5%8A%9F"><span class="toc-number">1.2.</span> <span class="toc-text">测试nodejs（及附件）和Git是否下载成功</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%90%AD%E5%BB%BAGitHub%E4%BB%93%E5%BA%93"><span class="toc-number">1.3.</span> <span class="toc-text">搭建GitHub仓库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E6%88%90SSH-Keys"><span class="toc-number">1.4.</span> <span class="toc-text">生成SSH Keys</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEGitHub-SSH"><span class="toc-number">1.5.</span> <span class="toc-text">配置GitHub SSH</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E5%9C%B0%E7%94%9F%E6%88%90%E5%8D%9A%E5%AE%A2%E5%86%85%E5%AE%B9"><span class="toc-number">1.6.</span> <span class="toc-text">本地生成博客内容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8A%E4%BC%A0HEXO"><span class="toc-number">1.7.</span> <span class="toc-text">上传HEXO</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BB%93%E8%AF%AD"><span class="toc-number">2.</span> <span class="toc-text">结语</span></a></li></ol></div></div><footer><nobr>构建自 <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> 使用主题 <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknights</a></nobr><wbr><nobr> 主题作者 <a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr><wbr><nobr> 构建时间<script>const buildTime = new Date("2026-10-25T21:56:56.721Z");
+document.write(' ' + buildTime.toLocaleString());</script></nobr></footer></aside></main><canvas id="canvas-dust"></canvas></body></html>
