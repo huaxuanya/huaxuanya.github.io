@@ -1,0 +1,110 @@
+<!DOCTYPE html><html lang="zh-CN" theme-mode="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Python学习/1 | 洪尘の资料库</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="preload" as="font" crossorigin="anonymous" href="/font/Bender.ttf"><link rel="preload" as="font" crossorigin="anonymous" href="/font/BenderLight.woff2"><link rel="preload" as="font" crossorigin="anonymous" href="/font/JetBrainsMono-Regular.woff2"><link rel="stylesheet" href="/css/arknights.css"><style>@font-face {
+  font-family: Bender;
+  src: local('Bender'), url("/font/Bender.ttf"), url("/font/Bender.otf");
+}
+@font-face {
+  font-family: BenderLight;
+  src: local('BenderLight'), url("/font/BenderLight.ttf");
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}
+</style><meta name="page-config" content="{&quot;code_fold&quot;:null}"><script class="pjax-js">var config = {"root":"/","code_fold":15,"search":{"preload":true,"activeHolder":"键入以继续","blurHolder":"数据检索","noResult":"无 $0 相关数据"},"code":{"codeInfo":"$0 - $1 行","copy":"复制"}};
+var page_config = {
+  code_fold: null
+};
+function updatePageConfig() {
+  var newPageConfig = document.querySelector('meta[name="page-config"]');
+  if (newPageConfig) {
+    page_config = JSON.parse(newPageConfig.content);
+  }
+}
+document.addEventListener('pjax:complete', function() { updatePageConfig(); });
+updatePageConfig();</script><link type="text/css" rel="stylesheet" href="/lib/encrypt/hbe.style.css"><script src="//unpkg.com/mermaid@10.5.0/dist/mermaid.min.js"></script><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lightgallery.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-zoom.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-thumbnail.css"><link type="text/css" rel="stylesheet" href="/lib/fontawesome/css/all.min.css"><script>if (window.localStorage.getItem('theme-mode') === 'light')
+ document.documentElement.setAttribute('theme-mode', 'light')
+if (window.localStorage.getItem('theme-mode') === 'dark')
+ document.documentElement.setAttribute('theme-mode', 'dark')</script><style>@font-face {
+ font-family: BenderLight;
+ src: local('Bender'), url("/font/BenderLight.woff2") format('woff2');
+}
+@font-face {
+ font-family: 'JetBrains Mono';
+ src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}</style><style>:root {
+ --dark-background: url('/img/d.jpg');
+ --light-background: url('/img/y.jpg');
+ --theme-encrypt-confirm: '确认'
+}</style><script defer src="/js/arknights.js"></script><script defer src="/js/search.js"></script><script defer src="https://vercount.one/js"></script><script defer type="module">import mermaid from '//unpkg.com/mermaid@10.5.0/dist/mermaid.esm.mjs';
+window.mermaid = mermaid;
+code.paintMermaid();
+</script><script async src="//unpkg.com/lightgallery@2.7.1/lightgallery.min.js"></script><script async src="//unpkg.com/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script><script async src="//unpkg.com/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script><script async src="/lib/encrypt/hbe.js"></script><script async src="/js/pjax.js"></script><script class="pjax-js">reset= () => {document.querySelector('.lg-container')?.remove()
+lightGallery(document.getElementById('post-bg'), {
+  plugins: [lgZoom,lgThumbnail],
+  selector: '.item-img'})}</script><script>window.addEventListener("load",() => {pjax = new Pjax({
+ cacheBust: false,
+ selectors: ['title','article','#aside-block','.pjax-js','data-pjax','.vercount','meta[name=page-config]'],
+ switches: {'article': Pjax.switches.sideBySide},
+ switchesOptions: {
+   'article': {
+     classNames: {
+       remove: "pjax-out",
+       add: "pjax-in"
+     }
+   }
+ }
+});
+document.addEventListener("pjax:complete", reset);document.addEventListener('pjax:success', _ => {
+ const script = document.createElement('script');
+ script.src = 'https://vercount.one/js';
+ document.head.appendChild(script);
+});reset()})</script><script class="pjax-js">reset= () => {document.querySelector('.lg-container')?.remove()
+const postBg = document.querySelector('#post-bg');
+if (postBg) lightGallery(postBg, {
+  plugins: [lgZoom,lgThumbnail],
+  selector: '.item-img'})}</script><script>window.addEventListener("load",() => {pjax = new Pjax({
+ cacheBust: false,
+ selectors: ['title','article','#aside-block','.pjax-js','data-pjax','.vercount','meta[name=page-config]'],
+ switches: {'article': Pjax.switches.sideBySide},
+ switchesOptions: {
+   'article': {
+     classNames: {
+       remove: "pjax-out",
+       add: "pjax-in"
+     }
+   }
+ }
+});
+document.addEventListener("pjax:complete", reset);document.addEventListener('pjax:success', _ => {
+ const script = document.createElement('script');
+ script.src = 'https://vercount.one/js';
+ document.head.appendChild(script);
+});reset()})</script><meta name="generator" content="Hexo 8.1.2"></head><body><div class="loading" style="opacity: 0;"><div class="loadingBar left"></div><div class="loadingBar right"></div></div><main><header class="closed"><div class="navBtn"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><nav><div class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="数据检索" spellcheck="false" maxlength="50" type="text" id="search-input"></span></div><div class="navItem" id="search-holder"></div><div class="search-popup" tabindex="0"><div id="search-result"></div></div><ol class="navContent"><li class="navItem"><a class="navBlock" href="/"><span class="navItemTitle">Home</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/archives/"><span class="navItemTitle">Archives</span></a></li></ol></nav></header><article><div id="post-bg"><div id="post-title"><h1>Python学习/1</h1><div id="post-info"><span>文章发布时间: <div class="control"><time datetime="2026-10-27T10:09:05.000Z" id="date"> 2026-10-27</time></div></span><br><span>最后更新时间: <div class="control"><time datetime="2026-10-27T14:46:08.369Z" id="updated"> 2026-10-27</time></div></span><br><span id="vercount_container_page_pv">页面浏览: <span class="control" id="vercount_value_page_pv">加载中...</span></span></div></div><hr><div id="post-content"><img src="/2026/10/27/Python%E5%AD%A6%E4%B9%A0-1/zy.png" class="">
+<h1 id="Python入门"><a href="#Python入门" class="headerlink" title="Python入门"></a>Python入门</h1><blockquote>
+<p>这期是我的Python学习过程,不过也算复习了<br>这期博客的创作以及学习来源在这<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Jgf6YvE8e/?spm_id_from=333.1007.top_right_bar_window_default_collection.content.click&vd_source=09f7a48a4b8a7cee8cde114ee423e84d">视频教程</a>  </p>
+</blockquote>
+<h2 id="Halo-World"><a href="#Halo-World" class="headerlink" title="Halo World"></a>Halo World</h2><blockquote>
+<p>Python的最基础函数<strong>print</strong>的使用<br>转义符的用法和引号用法  </p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">print(&quot;Halo World&quot;)  #&quot;输出字符串&quot;<br>print(&#x27;我很高兴能够进入到Python的学习项目&#x27;)<br>#&#x27;也是输出字符串（不常用）&#x27;<br><br>print(&quot;你好&quot; + &quot;这是一句代码&quot; + &quot;哈哈&quot;) #将字符串并在一起输出<br>print(&#x27;Let\&#x27;s go&#x27;) #\转义字符<br>print(&quot;我是第一行\n我是第二行&quot;) #\n换行符<br>print(&quot;\n&quot;) #空行<br>print(&quot;&quot;&quot;君不见，黄河之水天上来，奔流到海不复回。<br>君不见，高堂明镜悲白发，朝如青丝暮成雪！<br>人生得意须尽欢，莫使金樽空对月。<br>天生我材必有用，千金散尽还复来。<br>烹羊宰牛且为乐，会须一饮三百杯。<br>岑夫子，丹丘生，将进酒，杯莫停。<br>与君歌一曲，请君为我倾耳听。<br>钟鼓馔玉不足贵，但愿长醉不复醒。<br>古来圣贤皆寂寞，惟有饮者留其名。<br>陈王昔时宴平乐，斗酒十千恣欢谑。<br>主人何为言少钱，径须沽取对君酌。<br>五花马、千金裘，呼儿将出换美酒，与尔同销万古愁！&quot;&quot;&quot;)<br>#&quot;&quot;&quot;多行字符串输出&quot;&quot;&quot;<br></code></pre></td></tr></table></figure>
+<p>双引号引用字符串以print输出是最常用的方法,单引号也有一样的效果<br>转义符\最常用的用法是\n表示换行,还有\‘让电脑认为代码是连贯的<br>上面这个代码的运行效果↓  </p class='item-img' data-src='/2026/10/27/Python%E5%AD%A6%E4%B9%A0-1/halo.png'><img src="/2026/10/27/Python%E5%AD%A6%E4%B9%A0-1/halo.png" class="">  
+<h2 id="变量以及命名规则"><a href="#变量以及命名规则" class="headerlink" title="变量以及命名规则"></a>变量以及命名规则</h2><h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><blockquote>
+<p>变量指的是可以被赋值的字符<br>用&#x3D;赋值后也仍然可以被替换<br>变量可以被其他函数调用,如print  </p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">greet = &quot;您好，吃了么，&quot; #一级变量赋值<br>greet_characters = greet #二级变量赋值<br>greet_e = &quot;You what&#x27;s up,&quot; #三级变量赋值<br>greet = greet_e #四级变量赋值<br>print(greet + &quot;王工&quot;) #输出被四级变量赋值后的结果<br>print(greet_characters + &quot;王工&quot;) #输出被二级变量赋值后的结果<br></code></pre></td></tr></table></figure>
+<p>运行效果↓  </p class='item-img' data-src='/2026/10/27/Python%E5%AD%A6%E4%B9%A0-1/bl.png'><img src="/2026/10/27/Python%E5%AD%A6%E4%B9%A0-1/bl.png" class="">  
+<h3 id="命名规则"><a href="#命名规则" class="headerlink" title="命名规则"></a>命名规则</h3><blockquote>
+<p>变量名尽可能使用易懂的<br>列如对应英文单词，或者中文拼音&#x2F;首字母（只适合个人的小项目）<br>中文变量名因为是最近才更新的，兼容性会有很大问题（可能你的电脑跑这个代码都会乱码报错）</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">#尽量用简单易懂的变量名<br>name = &quot;王工&quot;<br>print(&quot;早上好，&quot; + name)<br>#Python3.x版本后支持中文变量名，不过因为兼容性问题，建议还是使用英文变量名<br>姓名 = &quot;王工&quot;<br>print(&quot;晚上好，&quot; + 姓名)<br></code></pre></td></tr></table></figure>
+<p>运行效果↓</p class='item-img' data-src='/2026/10/27/Python%E5%AD%A6%E4%B9%A0-1/blgz.png'><img src="/2026/10/27/Python%E5%AD%A6%E4%B9%A0-1/blgz.png" class="">  
+<h2 id="数学运算"><a href="#数学运算" class="headerlink" title="数学运算"></a>数学运算</h2><blockquote>
+<p>了解运算模块就要先了解函数<br>列如print就是一个函数，因为太常用了所以程序默认就能运行<br>想要进行复杂的运算就要导入（import）对应的运算模块<br><a target="_blank" rel="noopener" href="https://docs.python.org/zh-cn/3/library/math.html">math</a>官方库在这里</p>
+</blockquote>
+<p>这是个一元二次方程，进行运算需要导入math函数模块进行性以使用开根号函数&#x2F;虽然**（1&#x2F;2）有一样的效果，不过在这里还是使用函数模块以演示学习↓</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">#-1x**2-2x+3=?<br>import math #导入math模块(即函数库),简单运算不需要导入<br>a = -1<br>b = -2<br>c = 3<br>公式1 = (-b + math.sqrt(b**2 - 4*a*c)) / (2*a) #math.sqrt()是开平方函数<br>公式2 = (-b - math.sqrt(b**2 - 4*a*c)) / (2*a) #这两个公式是求解一元二次方程的通用公式<br>#注意方程需满足b**2 - 4*a*c &gt;= 0,否则会报错<br>print(&quot;方程的解1为:&quot;, 公式1) #输出方程的两个解<br>print(&quot;方程的解2为:&quot;, 公式2)<br></code></pre></td></tr></table></figure>
+<p>运行效果↓  </p class='item-img' data-src='/2026/10/27/Python%E5%AD%A6%E4%B9%A0-1/ys.png'><img src="/2026/10/27/Python%E5%AD%A6%E4%B9%A0-1/ys.png" class="">  
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>这期Python学习就先到这里<br>感谢B站创作者发布的<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Jgf6YvE8e/?spm_id_from=333.1007.top_right_bar_window_default_collection.content.click&vd_source=09f7a48a4b8a7cee8cde114ee423e84d">视频教程</a>以供学习  </p>
+<p>HEXO美化及发布教程将在近期更新<br>Python学习复习本人还在逐步推进</p>
+<div id="paginator"></div></div><div id="post-footer"><div id="pages" style="justify-content: flex-end"><div class="footer-link" style="width: 50%;right:1px;border-left:1px #fe2 solid"><a href="/2026/10/26/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%85%A5%E9%97%A8HEXO/">从零开始入门HEXO 上一篇 →</a></div></div></div></div><div class="bottom-btn"><div><a class="i-top" id="to-top" onClick="scrolls.scrolltop();" title="回到顶部" style="opacity: 0; display: none;">∧ </a><a class="i-index" id="to-index" href="#toc-div" title="文章目录">≡</a><a class="i-color" id="color-mode" onClick="colorMode.change()" title="切换主题"></a><a onclick="BgmControl()"><svg id="bgm-control" viewBox="0 0 30 34" fill="#18d1ff" style="width: 24px; transition: transform .3s;margin-top: 4px"><path d="M25.998 23.422V11.29h3.999v12.132h-3.999zM19.497 6.234h4.001v22.243h-4.001V6.234zM12.998.867h4v32.978h-4V.867zm-6.5 5.367h4.001v22.243H6.498V6.234zm-6.5 5.056h4v12.132h-4V11.29z"></path></svg><audio id="bgm" src="/audio/bgm.mp3" autoplay loop crossorigin="anonymous"> </audio></a></div></div></article><aside><div id="about"><a href="/" id="logo"><img src="/img/tx.jpg" alt="Logo" style="margin:0;border-radius:0;"></a><h1 id="Dr"><a href="/">huaxuanya</a></h1><div id="description"><p>终端仍在测试 更多功能敬请期待 V0.8.0</p></div><div id="social-links"><a class="social" target="_blank" rel="noopener" href="https://github.com/huaxuanya"><i class="fab fa-github" alt="GitHub"></i></a><a class="social" target="_blank" rel="noopener" href="https://space.bilibili.com/457231620?spm_id_from=333.1007.0.0"><i class="fa-brands fa-bilibili" alt="BiliBili"></i></a></div></div><div id="aside-block"><div id="toc-div"><h1>目录</h1><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Python%E5%85%A5%E9%97%A8"><span class="toc-number">1.</span> <span class="toc-text">Python入门</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Halo-World"><span class="toc-number">1.1.</span> <span class="toc-text">Halo World</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%98%E9%87%8F%E4%BB%A5%E5%8F%8A%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99"><span class="toc-number">1.2.</span> <span class="toc-text">变量以及命名规则</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%98%E9%87%8F"><span class="toc-number">1.2.1.</span> <span class="toc-text">变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99"><span class="toc-number">1.2.2.</span> <span class="toc-text">命名规则</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E5%AD%A6%E8%BF%90%E7%AE%97"><span class="toc-number">1.3.</span> <span class="toc-text">数学运算</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BB%93%E8%AF%AD"><span class="toc-number">2.</span> <span class="toc-text">结语</span></a></li></ol></div></div><footer><nobr>构建自 <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> 使用主题 <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknights</a></nobr><wbr><nobr> 主题作者 <a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr><wbr><nobr> 构建时间<script>const buildTime = new Date("2026-10-27T14:46:32.204Z");
+document.write(' ' + buildTime.toLocaleString());</script></nobr></footer></aside></main><canvas id="canvas-dust"></canvas></body></html>
