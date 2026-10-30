@@ -1,0 +1,70 @@
+/* ============================================================
+   竖屏适配补丁 —— 洪尘の资料库 / hexo-theme-arknights
+   1) 竖屏：深色、浅色各用一张竖版壁纸（横屏仍用原来的 2560x1440）
+   2) 竖屏：背景改为居中，避免默认 50% 0 把画面顶部切掉
+   3) 移动端：头像恢复正常尺寸（主题默认把它做成屏幕底部的巨型水印）
+   由 _config.arknights.yml 的 stylesheets 引入
+   ============================================================ */
+
+/* ---------- 1 & 2. 竖屏壁纸 ---------- */
+/* 注意：变量必须用 html:root[...] 提高权重。
+   主题的 --dark-background / --light-background 生成在 </head> 更靠后的
+   <style> 里，只写 :root 会被它盖掉。 */
+@media (orientation: portrait) {
+  /* 深色主题 → 深色竖版 */
+  html:root[theme-mode=dark] {
+    --dark-background: url('/img/d-portrait.jpg');
+  }
+
+  /* 浅色主题 → 浅色竖版 */
+  html:root[theme-mode=light] {
+    --light-background: url('/img/y-portrait.jpg');
+  }
+
+  html body {
+    background-position: 50% 50%;
+  }
+}
+
+/* ---------- 3. 移动端头像 ---------- */
+/* 主题在 <=768px 时把 #logo img 固定到屏幕左下角：
+   opacity .05 / bottom -50px / left -46% / width 100vw，
+   在手机上看就是一张被切掉一半的巨大幽灵头像。
+   这里恢复成一个 88px 的小圆头像。 */
+@media (max-width: 768px) {
+  #logo {
+    display: block;
+    width: 88px;
+    height: 88px;
+    margin: 1.2em auto 0.4em;
+  }
+
+  #logo img {
+    position: static;
+    width: 88px;
+    height: 88px;
+    opacity: 1;
+    object-fit: cover;
+    pointer-events: auto;
+    /* 主题在 <img> 上写死了 inline 的 border-radius: 0，只能用 !important 覆盖 */
+    border-radius: 50% !important;
+  }
+}
+
+/* ---------- 备选：想保留"水印"风格 ----------
+   删掉上面第 3 段，换成下面这段（水印居中、不切边）：
+
+   @media (max-width: 768px) {
+     #logo { height: 0; margin: 0; }
+     #logo img {
+       position: fixed;
+       left: 50%;
+       bottom: -24px;
+       width: 68vw;
+       height: auto;
+       transform: translateX(-50%);
+       opacity: 0.06;
+       pointer-events: none;
+     }
+   }
+   =========================================== */
